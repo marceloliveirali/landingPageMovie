@@ -21,7 +21,13 @@ function images() {
         .pipe(gulp.dest('./dist/img'));
 }
 
-exports.default = gulp.parallel(styles, images, scripts);
+function icones() {
+    return gulp.src('./assets/icons/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./dist/img'));
+}
+
+exports.default = gulp.parallel(styles, images, scripts, icones);
 exports.watch = function() {
     gulp.watch('./src/styles/*.scss', gulp.parallel(styles,scripts));
     gulp.watch('./src/scripts/*.js', gulp.parallel(scripts));

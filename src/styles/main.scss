@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Creepster, sans-serif;
+    src: url(../../assets/fonts/Creepster-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Lobster, sans-serif;
+    src: url(../../assets/fonts/Lobster-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Josefin Sans, sans-serif;
+    src: url(../../assets/fonts/JosefinSans-VariableFont_wght.ttf);
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Creepster, sans-serif;
+    font-size: larger;
+    font-weight: 400;
+}
+
+#subTitulo {
+    font-family: Josefin Sans, sans-serif;
+    font-size: small;
+    font-weight: lighter;
+}
