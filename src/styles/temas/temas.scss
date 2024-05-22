@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Creepster';
+    src: url(../../../assets/fonts/Creepster/Creepster-Regular.ttf) format('woff2');
+    font-size: 400;
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: 'Lobster Two';
+    src: url(../../../assets/fonts/Lobster_Two/LobsterTwo-Regular.ttf) format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: NORMAL_OR_ITALIC;
+    font-weight: NUMERIC_WEIGHT_VALUE;
+    src: url(../../../assets/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf) format('woff2');
+    font-weight: 400;
+}
+
+$colourOfBackground: black;
+$colourSecond:  rgb(194, 86, 122);
+
+$fontCreepster: 'Creepster';
+$fontJosefin: 'Josefin Sans';
+$fontLobsterTwo: 'Lobster Two';

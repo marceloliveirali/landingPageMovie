@@ -4,30 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Filme</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./dist/css/main.css" />
+    <link rel="stylesheet" href="./dist/css/base/base.css" />
+    <link rel="stylesheet" href="./dist/css/layout/layout.css" />
+    <link rel="stylesheet" href="./dist/css/modulos/modulos.css" />
+    <link rel="stylesheet" href="./dist/css/estados/estados.css" />
+    <link rel="stylesheet" href="./dist/css/temas/temas.css" />
 </head>
 <body>
-    <header>
-        <div>
-            <h1 class="creepster-regula">LANDING</h1>
-            <p id="subTitulo">PAGE|FILME</p>
+    <header class="header">
+        <div class="container">
+                <h1 class="container__title">
+                    LANDING
+                    <p>PAGE|MOVIE</p>
+                </h1>
+            <div class="container__icons--menu">
+                <i class="container__icons" onclick="clickMenu()">
+                    <img src="./assets/icons/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="menu" />
+                </i>
+                <i class="material-icons--close">
+                    <img src="./assets/icons/close_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="close" />
+                </i>
+                <menu>
+                    <ul>
+                        <li>Personagens</li>
+                        <li>Trailer</li>
+                    </ul>
+                </menu>
+            </div>
         </div>
-        <div>
-            <i class="material-icons" onclick="clickMenu()">
-                <img src="./assets/icons/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="menu" />
-            </i>
-            <i class="material-icons">
-                <img src="./assets/icons/close_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="close" />
-            </i>
-        </div>
-            <menu>
-                <ul>
-                    <li>Personagens</li>
-                </ul>
-            </menu>
     </header>
 
     <footer>

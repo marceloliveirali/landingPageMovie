@@ -1,0 +1,8 @@
+@use '../base/base.scss';
+@use '../temas/temas.scss';
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: temas.$colourSecond;
+}

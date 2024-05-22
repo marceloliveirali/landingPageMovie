@@ -1,0 +1,26 @@
+@use '../layout/layout.scss';
+@use '../temas/temas.scss';
+
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024;
+    width: 100%;
+    font-family: temas.$fontLobsterTwo;
+
+    &__title {
+        text-align: center;
+        font-family: temas.$fontCreepster;
+        font-size: 35px;
+        
+        &>p {
+            font-family: temas.$fontJosefin;
+            font-size: 15px;
+        }
+    }
+}
+
