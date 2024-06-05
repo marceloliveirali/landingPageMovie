@@ -1,4 +1,3 @@
-@use '../layout/layout.scss';
 @use '../temas/temas.scss';
 
 .container {
@@ -22,5 +21,29 @@
             font-size: 15px;
         }
     }
+    &__choice {
+        display: block;
+        &--icons {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    &--menu {
+        display: none;
+        margin-top: 70px;
+    }
 }
+
+ul {
+    li {
+        border-color: temas.$colourSecond;
+        color: temas.$colourOfBackground;
+        background-color: temas.$colourSecond;
+        list-style-type: none;
+    }
+}
+a {
+    list-style-type: none;
+}
+
 
