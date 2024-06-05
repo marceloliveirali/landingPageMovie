@@ -1,14 +1,15 @@
 @use '../temas/temas.scss';
 
-.container {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@mixin boxCenter() {
+    max-width: 1024;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1024;
-    width: 100%;
+}
+
+.container {
+    @include boxCenter();
     font-family: temas.$fontLobsterTwo;
 
     &__title {
@@ -21,29 +22,24 @@
             font-size: 15px;
         }
     }
-    &__choice {
+
+    &__nav {
+        margin: auto 0;
+        width: 10%;
         display: block;
-        &--icons {
-            margin: 0;
-            padding: 0;
+
+        &-icon {
+            margin: auto 0;
+            width: 50px;
+            height: 50px;
+            border: 2px solid temas.$colourOfBackground;
+            border-radius: 10px;
+            background-color: temas.$colourSecond;
         }
-    }
-    &--menu {
-        display: none;
-        margin-top: 70px;
     }
 }
 
-ul {
-    li {
-        border-color: temas.$colourSecond;
-        color: temas.$colourOfBackground;
-        background-color: temas.$colourSecond;
-        list-style-type: none;
-    }
-}
-a {
-    list-style-type: none;
-}
+
+
 
 

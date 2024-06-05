@@ -1,0 +1,16 @@
+@use '../temas/temas.scss';
+
+.container__nav-icon {
+
+    &--is-hamburger {
+        margin: auto 0;
+        width: 100%;
+    }
+
+    &--is-close {
+        display: none;
+        margin: auto 0;
+        width: 100%;
+    }
+
+}
