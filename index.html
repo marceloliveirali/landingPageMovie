@@ -19,20 +19,19 @@
                     PAGE|MOVIE
                 </p>
             </h1>
-            <nav class="container__menu">
-                <ul>
-                    <li class="container__menu-item"><a class="container__menu-link" href="#">Personagens</a></li>
-                    <li class="container__menu-item"><a class="container__menu-link" href="#">Trailer</a></li>
-                </ul>
-            </nav>
-            <div class="container__nav-icon">
-                <img class="container__nav-icon--is-hamburger" src="./assets/icons/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="menu" />
-                <img class="container__nav-icon--is-close" src="./assets/icons/close_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="close" />
-            </div>
+            <button class="container__btn">
+                <img onclick="menuShow" class="container__btn--is-hamburger" src="./assets/icons/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="menu" />
+                <img onclick="menuShow" class="container__btn--is-close" src="./assets/icons/close_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="close" />
+            </button>
         </div>
     </header>
-    
-    <!--https://www.youtube.com/watch?v=P9cSVCGj0I0-->
+    <nav class="menu">
+        <ul class="menu__itens">
+            <li class="menu__item"><a class="menu__link" href="#">Apresentação</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Personagens</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Trailer</a></li>
+        </ul>
+    </nav>
 
     <footer>
 

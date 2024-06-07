@@ -1,16 +1,19 @@
 @use '../temas/temas.scss';
 
-.container__nav-icon {
+.container__btn {
 
     &--is-hamburger {
+        display: block;
         margin: auto 0;
         width: 100%;
+        cursor: pointer;
     }
 
     &--is-close {
         display: none;
         margin: auto 0;
         width: 100%;
+        cursor: pointer;
     }
 
 }
