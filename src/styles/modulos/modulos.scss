@@ -1,15 +1,23 @@
 @use '../temas/temas.scss';
 
-@mixin boxCenter() {
-    max-width: 1024;
+@mixin boxCenter {
+    max-width: 1024px;
+    width: 100%;
     display:flex;
     justify-content: space-between;
     align-items: center;  
 }
 
+@mixin boxParagraph($colorTemas, $fontFamily, $fontSize) {
+    color: $colorTemas;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    letter-spacing: .1rem;
+    text-align: justify;
+}
+
 .container {
-    @include boxCenter();
-    width: 100%;
+    @include boxCenter;
     font-family: temas.$fontLobsterTwo;
 
     &__title {
@@ -35,40 +43,84 @@
 }
 
 .menu {
-    @include boxCenter();
-    display: none;
-    width: 10%;
-    height: 10%;
-    border: 5px solid temas.$colourOfBackground;
+    display: block;
+    width: 13%;
+    border: 0 solid temas.$colourOfBackground;
     background-color: temas.$colourSecond;
-    position: fixed;
-    left: 71%;
+    position: absolute;
+    top: 80;
+    right: 284;
     z-index: 1;
-    margin-top: 4px;
 
-    &__itens {
-        margin: auto 0;
-        padding: auto 0;
+    &-itens {
+        width: 100%;
+        min-height: 100%;
         display: flex;
         flex-direction: column;
-        font-size: 18px;
+        font-size: 22px;
     }
 
-    &__item {
+    &-item {
         list-style: none;
+        height: 33,33%;
         padding: 4px 0 4px 10px;
         border-bottom: 1px solid temas.$colourOfBackground;
         font-family: temas.$fontJosefin;
         font-weight: bolder;
+        text-align: center;
         text-align: justify;
     }
 
-    &__link {
+    &-link {
         text-decoration: none;
         color: temas.$colourOfBackground;
-        
     }
 }
+
+.synopsis {
+    @include boxCenter;
+    height: 90%;
+    margin: 40px auto;
+    position: relative;
+    border: 1px solid yellow;
+
+    &__poster {
+        display: block;
+        border: 1px solid blue;
+        max-width: 45%;
+        height: 100%;
+
+        &-img {
+            max-width: 100%;
+            max-height: 100%;
+            height: 900px;
+            width: 500px;
+        }
+        
+    }
+    
+    &__summary {
+        border: 1px solid blue;
+        max-width: 55%;
+        width: 100%;
+        height: 100%;
+
+        &-title {
+            color: temas.$colourSecond;
+            font-family: temas.$fontCreepster;
+            font-size: 45px;
+            font-weight: 400;
+            margin: 0 0 20px 20px ;
+        }
+
+        &-paragraph {
+            @include boxParagraph(temas.$colourSecond, temas.$fontCreepster, 16px);
+            margin: 0 20px 10px 20px;
+        }
+    }
+}
+
+
 
 
 
