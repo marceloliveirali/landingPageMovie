@@ -43,50 +43,52 @@
 }
 
 .menu {
-    display: block;
-    width: 13%;
-    border: 0 solid temas.$colourOfBackground;
-    background-color: temas.$colourSecond;
-    position: absolute;
-    top: 80;
-    right: 284;
-    z-index: 1;
+    @include boxCenter;
+    margin: 0 auto;
+    position: relative;
 
-    &-itens {
-        width: 100%;
-        min-height: 100%;
-        display: flex;
-        flex-direction: column;
-        font-size: 22px;
-    }
-
-    &-item {
-        list-style: none;
-        height: 33,33%;
-        padding: 4px 0 4px 10px;
-        border-bottom: 1px solid temas.$colourOfBackground;
-        font-family: temas.$fontJosefin;
-        font-weight: bolder;
-        text-align: center;
-        text-align: justify;
-    }
-
-    &-link {
-        text-decoration: none;
-        color: temas.$colourOfBackground;
+    &__box {
+        display: none;
+        width: 20%;
+        border: 0 solid temas.$colourSecond;
+        background-color: temas.$colourSecond;
+        position: absolute;
+        right: 0;
+        bottom: -100px;
+        z-index: 1;
+    
+        &-itens {
+            width: 100%;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-size: 22px;
+        }
+    
+        &-item {
+            list-style: none;
+            height: 33,33%;
+            padding: 4px 0 4px 10px;
+            border-bottom: 1px solid temas.$colourOfBackground;
+            font-family: temas.$fontJosefin;
+            font-weight: bolder;
+            text-align: center;
+            text-align: justify;
+        }
+    
+        &-link {
+            text-decoration: none;
+            color: temas.$colourOfBackground;
+        }
     }
 }
 
 .synopsis {
     @include boxCenter;
     height: 90%;
-    margin: 40px auto;
-    position: relative;
-    border: 1px solid yellow;
+    margin: 70px auto;
 
     &__poster {
-        display: block;
-        border: 1px solid blue;
         max-width: 45%;
         height: 100%;
 
@@ -100,22 +102,49 @@
     }
     
     &__summary {
-        border: 1px solid blue;
         max-width: 55%;
         width: 100%;
         height: 100%;
+        display: block;
 
         &-title {
             color: temas.$colourSecond;
             font-family: temas.$fontCreepster;
             font-size: 45px;
             font-weight: 400;
-            margin: 0 0 20px 20px ;
+            margin: 0 0 1% 3% ;
+            height: 6%;
         }
 
         &-paragraph {
             @include boxParagraph(temas.$colourSecond, temas.$fontCreepster, 16px);
-            margin: 0 20px 10px 20px;
+            margin: 0 3% 1% 3%;
+            max-width: 100%;
+        }
+
+        &Movie {
+            margin: 5% 3% 1% 3%;
+            max-width: 100%;
+            height: 15%;
+            background: temas.$colourSecond;
+
+            &-icom {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                height: 100%;
+            }
+
+            &-icons {
+                list-style: none;
+                margin: auto 0;
+                font-family: temas.$fontLobsterTwo;
+            }
+
+            &-img {
+                width: 30px;
+                height: 30px;
+            }
         }
     }
 }

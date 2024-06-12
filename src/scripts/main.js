@@ -1,7 +1,7 @@
 
 let open = window.document.querySelector('.container__btn--is-hamburger');
 let close = window.document.querySelector('.container__btn--is-close');
-let menu = window.document.querySelector('.menu');
+let menu = window.document.querySelector('.menu__box');
 
 open.addEventListener('click', function menuShow() {
     menu.style.display = 'block';
