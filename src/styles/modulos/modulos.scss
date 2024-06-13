@@ -98,7 +98,6 @@
             height: 900px;
             width: 500px;
         }
-        
     }
     
     &__summary {
@@ -144,6 +143,55 @@
             &-img {
                 width: 30px;
                 height: 30px;
+            }
+        }
+    }
+}
+
+.card {
+    &__title {
+        padding: 2px 0;
+        height: 7%;
+        color: temas.$colourSecond;
+        font-family: temas.$fontCreepster;
+        font-size:45px;
+        text-align: center;
+        border: 1px solid yellow;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 2%;
+        margin: 4px 0 0 0;
+        width: 100%;
+        border: 1px solid pink;
+        height: 93%;
+
+        &-flashcards {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid yellowgreen;
+            height: 28vh;
+
+            &Img {
+                max-width: 100%;
+                width: 100%;
+                height: 75%;
+            }
+
+            &Paragraph {
+                max-width: 100%;
+                margin: 2px 0 0 0;
+                height: 25%;
+                text-align: center;
+                font-family: temas.$fontLobsterTwo;
+                font-weight: 400;
+                font-size: 18px;
+                padding-top: 4px;
+                letter-spacing: .1rem;
+                background-color: temas.$colourSecond;
             }
         }
     }
