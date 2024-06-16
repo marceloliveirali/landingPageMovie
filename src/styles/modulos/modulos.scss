@@ -156,7 +156,6 @@
         font-family: temas.$fontCreepster;
         font-size:45px;
         text-align: center;
-        border: 1px solid yellow;
     }
 
     &__cards {
@@ -166,13 +165,11 @@
         gap: 2%;
         margin: 4px 0 0 0;
         width: 100%;
-        border: 1px solid pink;
-        height: 93%;
+        height: 120%;
 
         &-flashcards {
             display: flex;
             flex-direction: column;
-            border: 1px solid yellowgreen;
             height: 28vh;
 
             &Img {
@@ -182,14 +179,16 @@
             }
 
             &Paragraph {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 max-width: 100%;
                 margin: 2px 0 0 0;
                 height: 25%;
                 text-align: center;
                 font-family: temas.$fontLobsterTwo;
                 font-weight: 400;
-                font-size: 18px;
-                padding-top: 4px;
+                font-size: 16px;
                 letter-spacing: .1rem;
                 background-color: temas.$colourSecond;
             }
