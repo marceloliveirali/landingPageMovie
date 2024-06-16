@@ -196,6 +196,32 @@
     }
 }
 
+.trailer__title {
+    margin: 2px auto;
+    text-align: center;
+    font-family: temas.$fontCreepster;
+    font-weight: 400;
+    font-size: 45px;
+    color: temas.$colourSecond;
+}
+
+.trailer__youtube {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: 1fr;
+    max-width: 1024px;
+    width: 100%;
+    height: 70%;
+    margin-top: 40px;
+    
+    &-iframe {
+        grid-column: 2 / 3;
+        grid-row: 1 / 1;
+
+        
+    }
+}
+
 
 
 
