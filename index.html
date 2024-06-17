@@ -28,13 +28,13 @@
     <div class="menu">
         <nav class="menu__box">
             <ul class="menu__box-itens">
-                <li class="menu__box-item"><a class="menu__box-link" href="#">Sinopse</a></li>
-                <li class="menu__box-item"><a class="menu__box-link" href="#">Personagens</a></li>
-                <li class="menu__box-item"><a class="menu__box-link" href="#">Trailer</a></li>
+                <li class="menu__box-item"><a class="menu__box-link" href="#synopsis">Sinopse</a></li>
+                <li class="menu__box-item"><a class="menu__box-link" href="#persons">Personagens</a></li>
+                <li class="menu__box-item"><a class="menu__box-link" href="#trailer">Trailer</a></li>
             </ul>
         </nav>
     </div>
-    <section class="synopsis">
+    <section class="synopsis" id="synopsis">
         <div class="synopsis__poster">
             <img class="synopsis__poster-img" src="./dist/img/What Ever Happened to Baby Jane Movie Poster - Etsy.jpeg" alt="pôster" />
         </div>
@@ -51,14 +51,14 @@
                     <li class="synopsis__summaryMovie-icons"><img src="./dist/img/clapperboard-for-numbering-scenes-on-films-svgrepo-com.svg" alt="Diretor" class="synopsis__summaryMovie-img"> Diretor: Robert Aldrich </li>
                     <li class="synopsis__summaryMovie-icons"><img src="./dist/img/movie-svgrepo-com.svg" alt="Diretor" class="synopsis__summaryMovie-img"> Duração: 2h 14min  </li>
                     <li class="synopsis__summaryMovie-icons"><img src="./dist/img/film-svgrepo-com.svg" alt="Diretor" class="synopsis__summaryMovie-img" alt="Diretor" class="synopsis__summaryMovie-img"> Gênero: Terror Psicológico/Drama </li>
-                    <li class="synopsis__summaryMovie-icons"><img src="./dist/img/calendar-date-schedule-event-schedule-weekly-month-icon-svgrepo-com.svg" alt="Diretor" class="synopsis__summaryMovie-img"> Data de Lançamento: 1962 </li>
+                    <li class="synopsis__summaryMovie-icons"><img src="./dist/img/calendar-date-schedule-event-schedule-weekly-month-icon-svgrepo-com.svg" alt="Diretor" class="synopsis__summaryMovie-img"> Data de Lançamento: 29/10/1962 </li>
                     <li class="synopsis__summaryMovie-icons"><img src="./dist/img/load-balancer-network-svgrepo-com.svg" alt="Diretor" class="synopsis__summaryMovie-img"> Distribuição: Warner Bros. </li>
                     <li class="synopsis__summaryMovie-icons"><img src="./dist/img/road-signs-trekking-svgrepo-com.svg" alt="Diretor" class="synopsis__summaryMovie-img"> Classificação: 18 anos </li>
                 </ul>
             </div>
         </div>
     </section>
-    <section class="card">
+    <section class="card" id="persons">
         <h1 class="card__title">Elenco - Personagens</h1>
         <div class="card__cards">
             <div class="card__cards-flashcards">
@@ -143,15 +143,26 @@
             </div>
         </div>
     </section>
-    <section class="trailer">
+    <section class="trailer" id="trailer">
         <h1 class="trailer__title">Trailer</h1>
         <div class="trailer__youtube">
             <div class="trailer__youtube-poster"></div>
             <iframe class="trailer_youtube-iframe" width="560" height="400" src="https://www.youtube.com/embed/oVAcX8o7ojg?si=jHjz-76zT07WI6Ns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
-    <footer>
-
+    <footer class="footer">
+        <div class="containerFooter">
+            <h3 class="containerFooter__title">&copy; Todos os Direitos Reservados (Projeto Ebac)</h3>
+            <h4 class="containerFooter__subtitle">Desenvolvido por Marcelo Oliveira</h4>
+            <div class="containerFooter__icons">
+                <a class="containerFooter__icons-link" href="https://www.linkedin.com/in/marcelo-de-oliveira-lima-frontend/">
+                    <img class="containerFooter__icons-linkImg" src="./dist/img/linkedin.svg" alt="Linkedln">
+                </a>
+                <a class="containerFooter__icons-link" href="https://github.com/marceloliveirali">
+                    <img class="containerFooter__icons-linkImg" src="./dist/img/GitHub-Logo.png" alt="GitHub">
+                </a>
+            </div>
+        </div>
     </footer>
     <script src="./dist/js/main.js"></script>
 </body>

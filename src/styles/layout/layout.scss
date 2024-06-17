@@ -21,3 +21,11 @@
     background-image: url(/dist/img/babyJane3.jpg);
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: temas.$colourSecond;
+    margin-top: 70px;
+    border: 1px solid blue;
+}
+
