@@ -20,6 +20,16 @@
     @include boxCenter;
     font-family: temas.$fontLobsterTwo;
 
+    @media only screen and (max-width: 580px) {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    @media only screen and (max-width: 1023px) {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
     &__title {
         text-align: center;
         font-family: temas.$fontCreepster;
@@ -56,6 +66,16 @@
         right: 0;
         bottom: -100px;
         z-index: 1;
+
+        @media only screen and (max-width: 580px) {
+            max-width: 100%;
+            width: 40%;
+            right: 1%;
+        }
+
+        @media only screen and (max-width: 1023px) {
+            right: 10;
+        }
     
         &-itens {
             width: 100%;
@@ -85,26 +105,49 @@
 
 .synopsis {
     @include boxCenter();
-    height: 90%;
     margin: 70px auto;
+
+    @media only screen and (max-width: 580px) {
+        display: block;
+        margin-top: 35px;
+        margin-bottom: 35px;                   
+    }
 
     &__poster {
         max-width: 45%;
         height: 100%;
 
+        @media only screen and (max-width: 580px) {
+            max-width: 95%;
+            margin: 0 auto;                    
+        }
+
         &-img {
             max-width: 100%;
             max-height: 100%;
-            height: 900px;
-            width: 500px;
+            height: 100vh;
+            width: 100vw;
+
+            @media only screen and (max-width: 580px) {
+                max-width: 100%;
+                max-height: 100%;
+                height: 100vh;
+                width: 100vw;                   
+            }
         }
     }
     
     &__summary {
         max-width: 55%;
         width: 100%;
-        height: 100%;
         display: block;
+
+        @media only screen and (max-width: 580px) {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            margin: 0 auto;
+        }
 
         &-title {
             color: temas.$colourSecond;
@@ -113,12 +156,22 @@
             font-weight: 400;
             margin: 0 0 1% 3% ;
             height: 6%;
+
+            @media only screen and (max-width: 580px) {
+                text-align: center;
+                margin: 10px 0;
+                font-size: 30px;
+            }
         }
 
         &-paragraph {
             @include boxParagraph(temas.$colourSecond, temas.$fontCreepster, 16px);
             margin: 0 3% 1% 3%;
             max-width: 100%;
+
+            @media only screen and (max-width: 580px) {
+                margin-top: 10pxpx;
+            }
         }
 
         &Movie {
@@ -127,22 +180,40 @@
             height: 15%;
             background: temas.$colourSecond;
 
+            @media only screen and (max-width: 580px) {
+                font-size: 12px;
+                height: 20%;
+            }
+
             &-icom {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr 1fr;
                 height: 100%;
+
+                @media only screen and (max-width: 580px) {
+                    padding: 0 2px;
+                }
             }
 
             &-icons {
                 list-style: none;
                 margin: auto 0;
                 font-family: temas.$fontLobsterTwo;
+
+                @media only screen and (max-width: 580px) {
+                    font-size: 12px;
+                }
             }
 
             &-img {
                 width: 30px;
                 height: 30px;
+
+                @media only screen and (max-width: 580px) {
+                    width: 15px;
+                    height: 15px;
+                }
             }
         }
     }
@@ -151,26 +222,36 @@
 .card {
     &__title {
         padding: 2px 0;
-        height: 7%;
         color: temas.$colourSecond;
         font-family: temas.$fontCreepster;
-        font-size:45px;
+        font-size: 45px;
         text-align: center;
+
+        @media only screen and (max-width: 580px) {
+            font-size: 30px;
+            margin-bottom: 10px;
+
+        }
     }
 
     &__cards {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         gap: 2%;
         margin: 4px 0 0 0;
         width: 100%;
-        height: 120%;
+
+        @media only screen and (max-width: 580px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            margin-top: 2px;
+            gap: .1% 1%;
+        }
 
         &-flashcards {
             display: flex;
             flex-direction: column;
-            height: 28vh;
 
             &Img {
                 max-width: 100%;
@@ -191,6 +272,10 @@
                 font-size: 16px;
                 letter-spacing: .1rem;
                 background-color: temas.$colourSecond;
+
+                @media only screen and (max-width: 580px) {
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -206,19 +291,29 @@
 }
 
 .trailer__youtube {
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    grid-template-rows: 1fr;
-    max-width: 1024px;
-    width: 100%;
-    height: 70%;
-    margin-top: 40px;
-    
-    &-iframe {
-        grid-column: 2 / 3;
-        grid-row: 1 / 1;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 30px;
 
-        
+    @media only screen and (max-width: 580px) {
+        width: 50%;
+    }
+
+    &-link {
+        margin: 0 auto;
+        text-decoration: none;
+        width: 100%;
+        border-radius: 30px;
+
+        &Img {
+            width: 100%;
+            height: 40%;
+            border-radius: 30px;
+
+            @media only screen and (max-width: 580px) {
+                height: 40%;
+            }
+        }
     }
 }
 
@@ -229,6 +324,11 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
+
+    @media only screen and (max-width: 580px) {
+        width: 95%;
+        font-size: 12;
+    }
 
     &__icons-link {
         text-decoration: none;
